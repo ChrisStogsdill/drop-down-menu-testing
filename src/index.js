@@ -1,1 +1,4 @@
-console.log('test');
+const mobileOuterContainer = document
+  .getElementById('mobile-outer-container');
+
+  

@@ -49,3 +49,35 @@ li {
     visibility: inherit;
     
 }
+
+.shadow {
+    box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
+}
+
+#mobile-outer-container {
+    animation-name: mobile-picture-change;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:both;
+    
+    height: 200px;
+    width: 400px;
+    margin: 3em auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+    
+    
+}
+
+@keyframes mobile-picture-change {
+    0% {background-image: url('/src/Arbiters-of-Hexis.png');}
+    40% {background-image: url('/src/Cephalon-Simaris.png') ;}
+    80% {background-image: url('/src/Cephalon-Suda.png') ;}
+    100% {background-image: url('/src/Arbiters-of-Hexis.png');}
+
+
+    
+}
+
