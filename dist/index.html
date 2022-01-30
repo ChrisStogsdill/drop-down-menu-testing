@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/17ad717150.js" crossorigin="anonymous"></script>
     <title>DropDown Menu Test</title>
 </head>
 <body>
@@ -22,12 +23,25 @@
     </div>
 
     <div class="shadow" id="mobile-outer-container">
+        <!-- outer container needed to make position: fixed -->
         <div id="mobile-picture-container">
-            <div id="mobile-picture1" class="mobile-picture"></div>
-            <div id="mobile-picture2" class="mobile-picture"></div>
-            <div id="mobile-picture3" class="mobile-picture"></div>
-
+            <!-- inner container needed for flex grow to work -->
+            <div id="mobile-picture-inner-container">
+                <div class="mobile-picture mobile-picture-active"><img  src="/src/Arbiters-of-Hexis.png" alt="none"></div>
+                <div class="mobile-picture"><img  src="/src/Cephalon-Simaris.png" alt="none"></div>
+                <div class="mobile-picture"><img  src="/src/Cephalon-Suda.png" alt="none"></div>
+            </div>
+         </div>
+        <div id="mobile-buttons-container">
+            <div id="mobile-left-chevron"><i class="fas fa-chevron-left"></i></div>
+            <div id="mobile-dots-container">
+                <i class="fas fa-circle selected-dot"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+            <div id="mobile-right-chevron"><i class="fas fa-chevron-right"></i></div>
         </div>
+        
     </div>
 
 

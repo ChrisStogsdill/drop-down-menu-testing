@@ -1,4 +1,3 @@
-const mobileOuterContainer = document
-  .getElementById('mobile-outer-container');
+import pictureMobile from './pictureMobile';
 
-  
+pictureMobile();
